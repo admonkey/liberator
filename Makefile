@@ -1,15 +1,12 @@
 test: install
 	php --version
-	vendor/bin/peridot
+	vendor/bin/phpunit --no-coverage
 
 coverage: install
 	phpdbg --version
-	phpdbg -qrr vendor/bin/peridot --reporter html-code-coverage --code-coverage-path=coverage
+	phpdbg -qrr vendor/bin/phpunit
 
-ci: install
-	phpdbg --version
-	vendor/bin/peridot
-	phpdbg -qrr vendor/bin/peridot --reporter clover-code-coverage --code-coverage-path=coverage/clover.xml
+ci: coverage
 
 lint: install
 	vendor/bin/php-cs-fixer fix

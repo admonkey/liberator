@@ -11,26 +11,35 @@
 
 use Eloquent\Liberator\Liberator;
 
-describe('Documentation tests', function () {
-    xit('For objects', function () {
+class DocumentationTest extends PHPUnit_Framework_TestCase
+{
+    protected function setUp()
+    {
+        $this->markTestIncomplete('Needs review.');
+    }
+
+    public function testObjectUsage()
+    {
         $object = new SeriousBusiness();
         $liberator = Liberator::liberate($object);
 
         $this->assertEquals('foo is not so private...', $liberator->foo('not so private...'));
         $this->assertEquals('mind = blown', $liberator->bar . ' = blown');
-    });
+    }
 
-    xit('For classes', function () {
+    public function testClassUsage()
+    {
         $liberator = Liberator::liberateClass('SeriousBusiness');
 
         $this->assertEquals('baz is not so private...', $liberator->baz('not so private...'));
         $this->assertEquals('mind = blown', $liberator->qux . ' = blown');
-    });
+    }
 
-    xit('For classes (static)', function () {
+    public function testStaticClassUsage()
+    {
         $liberatorClass = Liberator::liberateClassStatic('SeriousBusiness');
 
         $this->assertEquals('baz is not so private...', $liberatorClass::baz('not so private...'));
         $this->assertEquals('mind = blown', $liberatorClass::liberator()->qux . ' = blown');
-    });
-});
+    }
+}

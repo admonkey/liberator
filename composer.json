@@ -27,9 +27,7 @@
     "require-dev": {
         "errors/exceptions": "dev-master",
         "friendsofphp/php-cs-fixer": "1.11.4",
-        "peridot-php/leo": "^1",
-        "peridot-php/peridot": "^1",
-        "peridot-php/peridot-code-coverage-reporters": "^2"
+        "phpunit/phpunit": "^4"
     },
     "autoload": {
         "psr-4": {
