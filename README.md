@@ -36,6 +36,11 @@ objects and classes (i.e. static methods and properties).
 methods that would otherwise require complicated test harnesses or mocking to
 test.
 
+Note that good design pretty much always negates the need to use this library.
+If *Liberator* is required, it should be treated as a [code smell].
+
+[code smell]: https://en.wikipedia.org/wiki/Code_smell
+
 ## Usage
 
 ### For objects
@@ -114,16 +119,4 @@ so accessing static properties in this way is a not as elegant as it could be.
 - Writing [white-box] style unit tests (testing protected/private methods).
 - Modifying behavior of poorly designed third-party libraries.
 
-<!-- References -->
-
 [white-box]: http://en.wikipedia.org/wiki/White-box_testing
-
-[API documentation]: http://lqnt.co/liberator/artifacts/documentation/api/
-[Composer]: http://getcomposer.org/
-[build-image]: http://img.shields.io/travis/eloquent/liberator/develop.svg "Current build status for the develop branch"
-[Current build status]: https://travis-ci.org/eloquent/liberator
-[coverage-image]: http://img.shields.io/coveralls/eloquent/liberator/develop.svg "Current test coverage for the develop branch"
-[Current coverage status]: https://coveralls.io/r/eloquent/liberator
-[eloquent/liberator]: https://packagist.org/packages/eloquent/liberator
-[Semantic versioning]: http://semver.org/
-[version-image]: http://img.shields.io/:semver-2.0.0-brightgreen.svg "This project uses semantic versioning"
