@@ -1,15 +1,30 @@
 # Liberator
 
-*A proxy for circumventing PHP access modifier restrictions.*
+*A proxy for circumventing PHP visibility keyword restrictions.*
 
-[![The most recent stable version is 2.0.0][version-image]][Semantic versioning]
-[![Current build status image][build-image]][Current build status]
-[![Current coverage status image][coverage-image]][Current coverage status]
+[![Current version image][version-image]][current version]
+[![Current build status image][build-image]][current build status]
+[![Current Windows build status image][windows-build-image]][current windows build status]
+[![Tested against HHVM][hhvm-image]][current hhvm build status]
+[![Current coverage status image][coverage-image]][current coverage status]
 
-## Installation and documentation
+[build-image]: https://img.shields.io/travis/eloquent/liberator/master.svg?style=flat-square "Current build status for the master branch"
+[coverage-image]: https://img.shields.io/codecov/c/github/eloquent/liberator/master.svg?style=flat-square "Current test coverage for the master branch"
+[current build status]: https://travis-ci.org/eloquent/liberator
+[current coverage status]: https://codecov.io/github/eloquent/liberator
+[current hhvm build status]: http://hhvm.h4cc.de/package/eloquent/liberator
+[current version]: https://packagist.org/packages/eloquent/liberator
+[current windows build status]: https://ci.appveyor.com/project/eloquent/liberator
+[hhvm-image]: https://img.shields.io/hhvm/eloquent/liberator/master.svg?style=flat-square "Tested against HHVM"
+[version-image]: https://img.shields.io/packagist/v/eloquent/liberator.svg?style=flat-square "This project uses semantic versioning"
+[windows-build-image]: https://img.shields.io/appveyor/ci/eloquent/liberator/master.svg?label=windows&style=flat-square "Current Windows build status for the master branch"
+
+## Installation
 
 - Available as [Composer] package [eloquent/liberator].
-- [API documentation] available.
+
+[composer]: http://getcomposer.org/
+[eloquent/liberator]: https://packagist.org/packages/eloquent/liberator
 
 ## What is Liberator?
 

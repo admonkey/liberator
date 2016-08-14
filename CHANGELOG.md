@@ -1,5 +1,9 @@
 # Liberator changelog
 
+## Next release
+
+- **[BC BREAK]** Ground-up rewrite.
+
 ## 2.0.0 (2014-02-09)
 
 - **[BC BREAK]** Some class members that were previously protected are now
